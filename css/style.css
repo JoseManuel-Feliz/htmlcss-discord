@@ -257,6 +257,7 @@ footer {
 .language,
 figure {
     display: inline-block;
+    vertical-align: top;
 }
 
 #choice-language {
