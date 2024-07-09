@@ -6,62 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Struttura-discord">
     <meta name=" author" content=" Novice web developer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Struttura-discord</title>
+    <link rel="icon" href="img/logo.svg" type="image/ico">
+    <title>Discord</title>
 </head>
 
 <body>
-    <!-- Navigation bar -->
+    <!-- Heading -->
     <header>
-        <div id="navigation-bar">
-            <div class="logo">Logo</div>
-            <nav>
+        <!-- Navigation bar -->
+        <nav id="navigation-bar" class="container">
+            <div class="nav logo">
+                <img src="img/logo.svg" alt="Discord icon">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Scarica</a></li>
+                <li><a href="#">Perché Discord</a></li>
+                <li><a href="#">Nitro</a></li>
+                <li><a href="#">Sicurezza</a></li>
+                <li><a href="#">Assistenza</a></li>
+            </ul>
+            <div>
+                <button class="login" type="button">Accedi</button>
+            </div>
+        </nav>
 
-                <ul id="links">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </nav>
-            <div class="login">Login</div>
+        <!-- Spotlight -->
+        <div class="spotlight">
+            <div class="content">
+                <h1>Il Tuo posto per parlare</h1>
+                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica
+                    mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo
+                    assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
+                <button class="download top" type="button"><i class="fa-solid fa-download"></i>Scarica per Mac</button>
+                <button class="open-browser" type="button">Apri Discord nel tuo browser</button>
+            </div>
         </div>
     </header>
 
     <!-- Main section -->
     <main>
-        <section class="il-tuo-posto">
-            <div></div>
-        </section>
-        <section class="un-luogo">
-            <div class="container">
-                <div class="big"></div>
-                <div class="small"></div>
+        <!-- Group chat -->
+        <section class="bg-white">
+            <div class="container flex">
+                <div class="large-col">
+                    <img class="" src="img/item1.svg" alt="Group chat image">
+                </div>
+                <div class="small-col">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o
+                        simplecemente parlare della tua giornata senza intasare una chat di gruppo</p>
+                </div>
             </div>
         </section>
-        <section class="dove-trovarsi">
-            <div class="container">
-                <div class="small"></div>
-                <div class="big"></div>
+        <!-- voice chat -->
+        <section class="bg-grey">
+            <div class="container flex">
+                <div class="small-col">
+                    <h2>
+                        Dove trovarsi é facile
+                    </h2>
+                    <p>
+                        Mettiti comodo in un canale vocale
+                        quando hai tempo. Gli amici nel tuo
+                        server possono vedere che sei lì e unirsi
+                        istantaneamente senza dover chiamare.
+                    </p>
+                </div>
+                <div class="large-col">
+                    <img class="" src="img/item2.svg" alt="voice chat image">
+                </div>
             </div>
         </section>
-        <section class="fandom">
-            <div class="container">
-                <div class="big"></div>
-                <div class="small"></div>
+        <!-- community chat -->
+        <section class="bg-white">
+            <div class="container flex">
+                <div class="small-col">
+                    <h2>
+                        Da pochi a un fandom
+                    </h2>
+                    <p>
+                        Dai inizio a una community di qualsias
+                        dimensione con strumenti di
+                        moderazione e accesso ai membri
+                        personalizzabile. Concedi ai membri
+                        poteri speciali, crea canali privati, e
+                        molto altro.
+                    </p>
+                </div>
+                <div class="large-col">
+                    <img class="" src="img/item3.svg" alt="community chat image">
+                </div>
             </div>
         </section>
-        <section class="tecnologia">
-            <div></div>
-        </section>
-        <section class="per-parlare">
-            <div class="container">
-                <div class="side-bar"></div>
-                <div class="nav-footer">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+        <!-- Video chat -->
+        <section class="bg-grey video-chat ">
+            <div class="container flex ">
+                <div class="full-col">
+                    <h2>
+                        Tecnologia affidabile per tenersi in contatto
+                    </h2>
+                    <p>
+                        Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai
+                        ciao
+                        in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la
+                        condivisione schermo.
+                    </p>
+                    <img class="" src="img/item4-big.svg" alt="Video chat image">
+                    <h3 class="stars">Pronto ad iniziare la tua tua avventura?</h3>
+                    <button class="download botton" type="button"><i class="fa-solid fa-download"></i> Scarica per
+                        Mac</button>
                 </div>
             </div>
         </section>
@@ -69,9 +126,79 @@
 
     <!-- Footer bar -->
     <footer>
-        <div id="footer-bar">
-            <div class="logo">Logo</div>
-            <div class="login">bottone</div>
+        <div class="container">
+            <div class="footer-top flex">
+                <div class="footer-left">
+                    <h3>Il tuo posto per parlare</h3>
+
+                    <figure>
+                        <img class="flag" src="img/ita.png" alt="Flag ita image">
+                    </figure>
+                    <div class="language">
+                        <label for="language"></label>
+                        <select id="choice-language" name="language">
+                            <option value="Italiano">Italiano</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="English">English</option>
+                        </select>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <ul class="nav-col">
+                            <li class="bg-purple"><a href="#">Prodotto</a></li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perché Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                        </ul>
+                        <ul class="nav-col">
+                            <li class="bg-purple"><a href="#">Compagnia</a></li>
+                            <li><a href="#">Chi siamo</a></li>
+                            <li><a href="#">Lavora con noi</a></li>
+                            <li><a href="#">Marchio</a></li>
+                            <li><a href="#">Redazione</a></li>
+                            <li><a href="#">Negozio</a></li>
+                        </ul>
+                        <ul class="nav-col">
+                            <li class="bg-purple"><a href="#">Risorse</a></li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perché Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perché Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                        </ul>
+                        <ul class="nav-col">
+                            <li class="bg-purple"><a href="#">Norme</a></li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perché Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom flex">
+                <div class="logo"><img src="img/logo.svg" alt="Discord logo"> </div>
+                <div>
+                    <button class="sign-in" type="button">Registrati</button>
+                </div>
+            </div>
         </div>
     </footer>
 

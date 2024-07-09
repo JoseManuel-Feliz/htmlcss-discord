@@ -1,168 +1,265 @@
 /* Reset */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.15rem;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: black;
     margin: 0;
     box-sizing: border-box;
+
 }
 
-/* Common things */
-.container,
-.per-parlare .container,
-.tecnologia div,
-#navigation-bar {
-    width: 1300px;
+/* Utils */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-header,
-#navigation-bar,
-#links,
-section,
-.login,
-.container,
-.per-parlare .container,
-.nav-footer,
-#footer-bar {
+.flex {
     display: flex;
-
 }
 
-#navigation-bar>*,
-.container>div,
-section>div,
-.container>div,
-#footer-bar div {
-    border: dashed black 2px;
+/* Color palette */
+.bg-white,
+.download.top,
+.login {
+    background: #FFFFFF;
 }
 
-header,
-#footer-bar {
-    height: 80px;
+
+.download.botton,
+.download.botton>*,
+footer *,
+header * {
+    color: #FFFFFF
 }
 
-#navigation-bar,
-#footer-bar div {
-    background-color: goldenrod;
+.bg-grey {
+    background: #F6F6F6;
 }
 
-/* Generics */
+.download.botton,
+.sign-in {
+    background: #8EA1E1;
+}
+
+.bg-purple a,
+.footer-left h3 {
+    color: #7289DA;
+}
+
+.open-browser,
+footer {
+    background: #23272A;
+}
+
+.download.top>*,
+.download.top,
+.login {
+    color: black;
+}
+
+/* Generics*/
 header {
-    background-color: #3161E0;
+    background: url(../img/jumbo.png);
+    background-size: cover;
+    padding-top: 30px;
+}
+
+header * {
+    text-align: center;
+}
+
+section {
+    height: 700px;
+    padding: 70px
+}
+
+section p {
+    margin-top: 30px
+}
+
+section>.container {
+    height: 100%;
+}
+
+h1 {
+    font-size: 65px;
+    padding: 15px 0;
+    margin-bottom: 20px
+}
+
+h2 {
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 ul * {
     list-style: none;
     text-decoration: none;
-    color: black;
 }
 
-section {
-    background-color: #FFFFFE;
-    height: 700px;
-}
-
-section,
-#footer-bar,
-#links {
+/*Common things */
+.spotlight,
+.nav-menu {
     justify-content: center;
-    align-items: center;
 }
 
-#navigation-bar,
-#footer-bar {
-    margin: auto;
-}
-
-#navigation-bar>*,
-#footer-bar div {
-    padding: 5px;
+.login,
+.sign-in {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
 }
 
 /* Navigation bar */
-#navigation-bar>* {
-    flex-grow: 1;
+#navigation-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
-#links {
-    flex-grow: 2;
-    gap: 15px;
+#navigation-bar>* {
+    padding: 10px 0;
+    flex-basis: 20%;
+}
+
+.nav-menu {
+    flex-grow: 1;
+    gap: 50px;
+    display: flex;
 }
 
 .login {
-    justify-content: flex-end;
+    text-align: right;
 }
 
-/* Main section */
-.il-tuo-posto {
-    background-color: #062481;
+/* Spotlight */
+.spotlight {
     height: 500px;
-    border-bottom: 5px solid rgb(248 188 229);
+    padding: 50px;
+    display: flex;
 }
 
-.il-tuo-posto div {
-    height: 400px;
-    background-color: #BCF8E8;
-    width: 1000px;
+.spotlight .content {
+    width: 50%;
+    margin: 0 auto;
 }
 
-.container div {
-    height: 600px;
+.spotlight p {
+    padding: 15px 55px;
 }
 
-.dove-trovarsi {
-    background-color: #D3D3D3;
+.spotlight button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 10px 15px;
+    border: none;
 }
 
-.big {
-    flex-basis: 70%;
-    background-color: #3161E0;
+.top .fa-download {
+    margin-right: 10px;
 }
 
-.small {
+
+
+/*Main section*/
+.small-col {
     flex-basis: 30%;
-    background-color: palevioletred;
 }
 
-.tecnologia {
-    background-color: #D3D3D3;
-    height: 1100px;
+.large-col {
+    flex-basis: 70%;
 }
 
-.tecnologia div {
-    height: 1000px;
-    background-color: #228B23;
-}
-
-.per-parlare {
-    background-color: #23272A;
-    height: 650px;
-    align-items: flex-start;
-    padding-top: 15px;
-}
-
-.side-bar {
-    flex-basis: calc(100% / 3);
-    background-color: #F0807F;
-}
-
-.nav-footer {
+.full-col {
     flex-basis: 100%;
-    background-color: #1FB2AA;
 }
 
-.nav-footer div {
-    flex-basis: calc(100% / 4);
-    border: dashed white 2px;
+.bg-grey.video-chat {
+    height: 1000px;
+    padding: 80px;
 }
 
-/* Footer bar */
+.bg-purple a {
+    font-weight: 600;
+}
+
+.video-chat>* {
+    text-align: center;
+}
+
+.stars {
+    background: url(../img/stars.svg) center;
+    background-size: contain;
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
+.download.botton {
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+/* footer */
 footer {
-    background-color: #23272A;
-    padding-top: 30px;
-    border-top: solid 2px #B7B7B7;
+    padding: 50px;
 }
 
-#footer-bar {
-    background-color: #7FFED4;
+.footer-top {
+    padding-top: 70px;
+    border-bottom: 2px solid #8EA1E1;
+    height: 700px;
+}
+
+.footer-left {
+    flex-basis: 30%;
+    padding-right: 105px;
+}
+
+.footer-left>* {
+    padding-bottom: 25px;
+}
+
+.footer-nav {
+    display: flex;
+    height: 100%;
+}
+
+.footer-nav .nav col {
+    flex-basis: calc(100% / 4)
+}
+
+.footer-bottom {
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 40px;
     justify-content: space-between;
+}
+
+.nav-col li {
+    padding: 10px;
+}
+
+.fa-brands {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.flag {
+    height: 25px;
+}
+
+.language,
+figure {
+    display: inline-block;
+}
+
+#choice-language {
+    background: none;
+    border: none;
 }
