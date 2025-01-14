@@ -1,4 +1,10 @@
-/* Reset */
+/* CUSTOM PROPERTIES */
+:root {
+    --primary: #ffffff;
+    --secondary: #cccccc;
+}
+
+/* RESET */
 * {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 22px;
@@ -8,26 +14,77 @@
 
 }
 
-/* Utils */
+/* UTILS */
 .container {
     max-width: 1300px;
     margin: 0 auto;
 }
 
-.flex {
+.d-flex {
     display: flex;
 }
 
-/* Color palette */
-.bg-white,
-.download.top,
-.login {
-    background: #FFFFFF;
+.justify-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* .img-fluid {
+    width: 100%;
+}
+ */
+
+/* SPACING */
+.me-10 {
+    margin-right: 10px;
+}
+
+.my-15 {
+    margin: 15px 0;
+}
+
+.me-15 {
+    margin-right: 15px;
+}
+
+/* RESET 'a' TAGS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* COLOR PALETTE */
+
+.bg-light-grey {
+    background-color: var(--secondary);
+}
+
+.bg-primary {
+    background-color: var(--primary);
 }
 
 
-.download.botton,
-.download.botton>*,
+.download.btn,
+.download.btn>*,
 footer *,
 header * {
     color: #FFFFFF
@@ -37,7 +94,7 @@ header * {
     background: #F6F6F6;
 }
 
-.download.botton,
+.download.btn,
 .sign-in {
     background: #8EA1E1;
 }
@@ -58,39 +115,50 @@ footer {
     color: black;
 }
 
-/* Generics*/
+/* GENERICS */
 header {
-    background: url(../img/jumbo.png);
-    background-size: cover;
-    padding-top: 30px;
+    background: url(../img/jumbo.png) fixed no-repeat 0 0 / contain;
 }
 
-header * {
-    text-align: center;
+main {
+    position: relative;
 }
 
-section {
-    height: 700px;
-    padding: 70px
+.img-back::before,
+.img-back::after {
+    content: "";
+    z-index: -1;
+    min-height: 700px;
+    width: 100%;
+    filter: invert(0.5);
+    position: absolute;
+    background: url(../img/wave.svg);
+    transform: scale3d(3.5, 0.8, 0.5);
+
+
 }
 
-section p {
-    margin-top: 30px
-}
 
 section>.container {
-    height: 100%;
+    min-height: 700px;
+
+    /*     padding: 70px
+ */
 }
 
+
+/* section>.container {
+    height: 100%;
+}
+ */
 h1 {
-    font-size: 65px;
-    padding: 15px 0;
-    margin-bottom: 20px
+    font-size: calc(6.5rem - 4vw)
 }
 
 h2 {
-    font-size: 55px;
-    margin-top: 20px;
+    font-size: calc(4.5rem - 2.5vw);
+    /*     margin-top: 20px;
+ */
 }
 
 h3 {
@@ -108,8 +176,8 @@ ul * {
     justify-content: center;
 }
 
-.login,
-.sign-in {
+.btn.login,
+.btn.sign-in {
     padding: 10px 15px;
     border-radius: 30px;
     border: none;
@@ -137,51 +205,45 @@ ul * {
     text-align: right;
 }
 
-/* Spotlight */
+/* SPOTLIGHT */
+
 .spotlight {
-    height: 500px;
-    padding: 50px;
-    display: flex;
+    min-height: calc(650px - 80px);
+
 }
 
-.spotlight .content {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.spotlight p {
-    padding: 15px 55px;
-}
-
-.spotlight button {
+.spotlight .btn {
     padding: 15px 25px;
     border-radius: 30px;
-    margin: 10px 15px;
-    border: none;
 }
 
 .top .fa-download {
-    margin-right: 10px;
+    /*     margin-right: 10px;
+ */
 }
 
 
 
-/*Main section*/
+/* MAIN SECTION */
 .small-col {
     flex-basis: 30%;
 }
 
 .large-col {
-    flex-basis: 70%;
+    flex: 0 0 auto;
+}
+
+.wrapper.col {
+    flex: 0 0 50%;
 }
 
 .full-col {
-    flex-basis: 100%;
+    flex: 0 0 100%;
 }
 
-.bg-grey.video-chat {
-    height: 1000px;
-    padding: 80px;
+.video-chat>.container {
+    min-height: 1000px;
+    /* padding: 80px; */
 }
 
 .bg-purple a {
@@ -199,13 +261,13 @@ ul * {
     margin-bottom: 30px;
 }
 
-.download.botton {
+.download.btn {
     padding: 15px 20px;
     border-radius: 30px;
     border: none;
 }
 
-/* footer */
+/* FOOTER */
 footer {
     padding: 50px;
 }
@@ -263,4 +325,36 @@ figure {
 #choice-language {
     background: none;
     border: none;
+}
+
+
+/* WAVE SVG */
+.wave {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    /* Altezza regolabile */
+    overflow: hidden;
+    z-index: 0;
+    /* Posizionata sotto il contenuto */
+}
+
+.wave-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(0%) scaleX(1);
+    filter: invert(0.8);
+}
+
+.wave-bottom {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    /* Altezza regolabile */
+    overflow: hidden;
+    z-index: 0;
+    transform: rotate(180deg);
 }
