@@ -17,44 +17,62 @@
 <body>
     <!-- Heading -->
     <header>
-        <!-- Navigation bar -->
-        <nav id="navigation-bar" class="container">
-            <div class="nav logo">
-                <img src="img/logo.svg" alt="Discord icon">
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#">Scarica</a></li>
-                <li><a href="#">Perché Discord</a></li>
-                <li><a href="#">Nitro</a></li>
-                <li><a href="#">Sicurezza</a></li>
-                <li><a href="#">Assistenza</a></li>
-            </ul>
-            <div>
-                <button class="login" type="button">Accedi</button>
-            </div>
-        </nav>
+        <div class="container">
 
-        <!-- Spotlight -->
-        <div class="spotlight">
-            <div class="content">
-                <h1>Il Tuo posto per parlare</h1>
-                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica
-                    mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo
-                    assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
-                <button class="download top" type="button"><i class="fa-solid fa-download"></i>Scarica per Mac</button>
-                <button class="open-browser" type="button">Apri Discord nel tuo browser</button>
+            <!-- Navigation bar -->
+            <nav id="navigation-bar">
+                <div class="nav logo d-flex justify-center">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="Discord icon">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#">Scarica</a></li>
+                    <li><a href="#">Perché Discord</a></li>
+                    <li><a href="#">Nitro</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">Assistenza</a></li>
+                </ul>
+                <div class="d-flex justify-center">
+                    <a href="#" class="login btn c-black bg-primary" href="#">Accedi</a>
+                </div>
+            </nav>
+
+            <!-- Spotlight -->
+            <div class="spotlight text-center d-flex">
+                <div class="wrapper col align-self-center">
+
+                    <h1>Il Tuo posto per parlare</h1>
+                    <p>
+                        Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica
+                        mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo
+                        assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.
+                    </p>
+
+                    <!-- BTN GROUP -->
+                    <div class="btn-group my-15">
+                        <a class="download top bg-primary btn c-black me-15" href="#">
+                            <i class="fa-solid fa-download me-10"></i>
+                            <span> Scarica per Mac </span>
+                        </a>
+                        <a class="open-browser btn c-primary bg-black" href="#">
+                            <span> Discord nel tuo browser </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-
     <!-- Main section -->
     <main>
         <!-- Group chat -->
-        <section class="bg-white">
-            <div class="container flex">
+        <section>
+            <div class="container d-flex justify-content-between align-items-center">
+
                 <div class="large-col">
-                    <img class="" src="img/item1.svg" alt="Group chat image">
+                    <img src="img/item1.svg" alt="Group chat image">
                 </div>
+
                 <div class="small-col">
                     <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
                     <p>I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o
@@ -62,9 +80,13 @@
                 </div>
             </div>
         </section>
+        <div class="wave">
+            <img src="./img/wave.svg" alt="Wave" class="wave-img">
+        </div>
+
         <!-- voice chat -->
-        <section class="bg-grey">
-            <div class="container flex">
+        <section class="bg-light-grey">
+            <div class="container d-flex justify-content-between align-items-center">
                 <div class="small-col">
                     <h2>
                         Dove trovarsi é facile
@@ -77,13 +99,16 @@
                     </p>
                 </div>
                 <div class="large-col">
-                    <img class="" src="img/item2.svg" alt="voice chat image">
+                    <img src="img/item2.svg" alt="voice chat image">
                 </div>
             </div>
         </section>
+        <div class="wave-bottom">
+            <img src="./img/wave.svg" alt="Wave" class="wave-img">
+        </div>
         <!-- community chat -->
-        <section class="bg-white">
-            <div class="container flex">
+        <section>
+            <div class="container d-flex justify-content-between align-items-center">
                 <div class="small-col">
                     <h2>
                         Da pochi a un fandom
@@ -98,36 +123,44 @@
                     </p>
                 </div>
                 <div class="large-col">
-                    <img class="" src="img/item3.svg" alt="community chat image">
+                    <img src="img/item3.svg" alt="community chat image">
                 </div>
             </div>
         </section>
+
+        <div class="wave">
+            <img src="./img/wave.svg" alt="Wave" class="wave-img">
+        </div>
         <!-- Video chat -->
-        <section class="bg-grey video-chat ">
-            <div class="container flex ">
+        <section class="video-chat bg-light-grey">
+            <div class="container d-flex justify-center align-items-center">
                 <div class="full-col">
-                    <h2>
-                        Tecnologia affidabile per tenersi in contatto
-                    </h2>
-                    <p>
-                        Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai
-                        ciao
-                        in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la
-                        condivisione schermo.
-                    </p>
+                    <div>
+                        <h2>
+                            Tecnologia affidabile per tenersi in contatto
+                        </h2>
+                        <p>
+                            Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza.
+                            Fai
+                            ciao
+                            in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con
+                            la
+                            condivisione schermo.
+                        </p>
+                    </div>
                     <img class="" src="img/item4-big.svg" alt="Video chat image">
                     <h3 class="stars">Pronto ad iniziare la tua tua avventura?</h3>
-                    <button class="download botton" type="button"><i class="fa-solid fa-download"></i> Scarica per
-                        Mac</button>
+                    <a class="download btn" href="#"><i class="fa-solid fa-download"></i> Scarica per
+                        Mac</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer bar -->
+    <!-- Footer bar 
     <footer>
         <div class="container">
-            <div class="footer-top flex">
+            <div class="footer-top d-flex">
                 <div class="footer-left">
                     <h3>Il tuo posto per parlare</h3>
 
@@ -193,15 +226,15 @@
                     </nav>
                 </div>
             </div>
-            <div class="footer-bottom flex">
+            <div class="footer-bottom d-flex">
                 <div class="logo"><img src="img/logo.svg" alt="Discord logo"> </div>
                 <div>
-                    <button class="sign-in" type="button">Registrati</button>
+                    <a href="#" class="sign-in btn c-primary bg-purple" href="#">Registrati</a>
                 </div>
             </div>
         </div>
     </footer>
-
+    -->
 </body>
 
 </html>
